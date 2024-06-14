@@ -16,7 +16,7 @@ public class MainModRecipeProvider extends RecipeProvider {
     protected final DataGenerator generator;
     private final CompletableFuture<HolderLookup.Provider> pRegistries;
 
-    public MainModRecipeProvider(@NotNull DataGenerator generator, CompletableFuture<HolderLookup. Provider> pRegistries) {
+    public MainModRecipeProvider(@NotNull DataGenerator generator, CompletableFuture<HolderLookup.Provider> pRegistries) {
         super(generator.getPackOutput(), pRegistries);
         this.generator = generator;
         this.pRegistries = pRegistries;

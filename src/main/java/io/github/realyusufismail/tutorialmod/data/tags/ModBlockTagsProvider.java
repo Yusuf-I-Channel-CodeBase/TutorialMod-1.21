@@ -22,6 +22,10 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         super(output, lookupProvider, TutorialMod.MOD_ID, existingFileHelper);
     }
 
+    private static TagKey<Block> createNeoForgeTag(String name) {
+        return TagKey.create(BuiltInRegistries.BLOCK.key(), ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
+    }
+
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         // ore
@@ -53,9 +57,5 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(BlockInit.EXAMPLE_BLOCK.get());
-    }
-
-    private static TagKey<Block> createNeoForgeTag(String name) {
-        return TagKey.create(BuiltInRegistries.BLOCK.key(), ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
     }
 }

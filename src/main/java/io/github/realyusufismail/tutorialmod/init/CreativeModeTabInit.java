@@ -1,7 +1,6 @@
 package io.github.realyusufismail.tutorialmod.init;
 
 import io.github.realyusufismail.tutorialmod.TutorialMod;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -10,8 +9,8 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class CreativeModeTabInit {
     public static DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TutorialMod.MOD_ID);
@@ -22,19 +21,20 @@ public class CreativeModeTabInit {
         CreativeModeTab.Builder builder = CreativeModeTab.builder();
 
         builder.displayItems((itemDisplayParameters, output) -> {
+            // Added to prevent duplicates
+            Set<Item> addedItems = new HashSet<>();
 
             ItemInit.ITEMS.getEntries()
                     .stream()
                     .map((item) -> item.get().asItem())
+                    .filter(addedItems::add)  // add to the set and filter out duplicates
                     .forEach(output::accept);
 
-            var b = BlockInit.BLOCKS.getEntries()
+            BlockInit.BLOCKS.getEntries()
                     .stream()
                     .map((block) -> block.get().asItem())
+                    .filter(addedItems::add)  // add to the set and filter out duplicates
                     .forEach(output::accept);
-
-            // TODO: find out why there is duplicate entries
-            //check for no duplicate entries
         });
 
         builder.icon(() -> new ItemStack(ItemInit.EXAMPLE_ITEM.get()));

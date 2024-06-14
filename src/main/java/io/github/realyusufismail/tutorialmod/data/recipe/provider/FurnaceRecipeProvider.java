@@ -16,7 +16,7 @@ import java.util.concurrent.CompletableFuture;
 public class FurnaceRecipeProvider extends MainModRecipeProvider {
     private final RecipeOutput output;
 
-    public FurnaceRecipeProvider(DataGenerator generator, RecipeOutput output, CompletableFuture<HolderLookup. Provider> pRegistries) {
+    public FurnaceRecipeProvider(DataGenerator generator, RecipeOutput output, CompletableFuture<HolderLookup.Provider> pRegistries) {
         super(generator, pRegistries);
         this.output = output;
     }

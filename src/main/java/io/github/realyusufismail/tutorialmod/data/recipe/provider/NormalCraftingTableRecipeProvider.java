@@ -16,7 +16,7 @@ import java.util.concurrent.CompletableFuture;
 public class NormalCraftingTableRecipeProvider extends MainModRecipeProvider {
     private final RecipeOutput output;
 
-    public NormalCraftingTableRecipeProvider(DataGenerator generator, RecipeOutput output, CompletableFuture<HolderLookup. Provider> pRegistries) {
+    public NormalCraftingTableRecipeProvider(DataGenerator generator, RecipeOutput output, CompletableFuture<HolderLookup.Provider> pRegistries) {
         super(generator, pRegistries);
         this.output = output;
     }
