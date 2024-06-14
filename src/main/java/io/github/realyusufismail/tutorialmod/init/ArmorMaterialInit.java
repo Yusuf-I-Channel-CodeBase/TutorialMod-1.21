@@ -35,14 +35,17 @@ public class ArmorMaterialInit {
             () -> Ingredient.of(TagsInit.ItemTagsInit.EXAMPLE_ITEM_TAG),
             List.of(
                     // Creates a new armor texture that will be located at:
-                    // - 'assets/mod_id/textures/models/armor/copper_layer_1.png' for the outer texture
-                    // - 'assets/mod_id/textures/models/armor/copper_layer_2.png' for the inner texture (only legs)
+                    // - 'assets/mod_id/textures/models/armor/examplelayer_1.png' for the outer texture
+                    // - 'assets/mod_id/textures/models/armor/example_layer_2.png' for the inner texture (only legs)
+
+                    // Has changed as before it was minecraft:armor/example_layer_1 and 2
                     new ArmorMaterial.Layer(
                             ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "example")
                     )
+
                     // Creates a new armor texture that will be rendered on top of the previous at:
-                    // - 'assets/mod_id/textures/models/armor/copper_layer_1_overlay.png' for the outer texture
-                    // - 'assets/mod_id/textures/models/armor/copper_layer_2_overlay.png' for the inner texture (only legs)
+                    // - 'assets/mod_id/textures/models/armor/example_layer_1_overlay.png' for the outer texture
+                    // - 'assets/mod_id/textures/models/armor/example_layer_2_overlay.png' for the inner texture (only legs)
                     // 'true' means that the armor material is dyeable; however, the item must also be added to the 'minecraft:dyeable' tag
                     // new ArmorMaterial.Layer(
                     //       ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "example"), "_overlay", true

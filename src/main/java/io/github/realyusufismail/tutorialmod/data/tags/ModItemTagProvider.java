@@ -6,6 +6,7 @@ import io.github.realyusufismail.tutorialmod.init.TagsInit;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
@@ -33,5 +34,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         // raw tag
         tag(TagsInit.ItemTagsInit.EXAMPLE_RAW_TAG).add(ItemInit.RAW_EXAMPLE.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ItemInit.HELMET.get())
+                .add(ItemInit.CHESTPLATE.get())
+                .add(ItemInit.LEGGINGS.get())
+                .add(ItemInit.BOOTS.get());
     }
 }
