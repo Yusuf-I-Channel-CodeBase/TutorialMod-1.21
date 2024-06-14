@@ -32,7 +32,7 @@ public class ArmorMaterialInit {
             // Gold uses 25, we put copper slightly below that.
             15,
             SoundEvents.ARMOR_EQUIP_GENERIC,
-            () -> Ingredient.of(TagsInit.EXAMPLE_ITEM_TAG),
+            () -> Ingredient.of(TagsInit.ItemTagsInit.EXAMPLE_ITEM_TAG),
             List.of(
                     // Creates a new armor texture that will be located at:
                     // - 'assets/mod_id/textures/models/armor/copper_layer_1.png' for the outer texture

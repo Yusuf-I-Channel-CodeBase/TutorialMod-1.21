@@ -1,5 +1,6 @@
 package io.github.realyusufismail.tutorialmod;
 
+import io.github.realyusufismail.tutorialmod.data.DataGenerators;
 import io.github.realyusufismail.tutorialmod.init.ArmorMaterialInit;
 import io.github.realyusufismail.tutorialmod.init.BlockInit;
 import io.github.realyusufismail.tutorialmod.init.CreativeModeTabInit;
@@ -12,7 +13,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Mod(TutorialMod.MOD_ID)
-
 public class TutorialMod {
     public static final String MOD_ID = "tutorialmod";
     public static Logger logger = LoggerFactory.getLogger(TutorialMod.class);
@@ -22,6 +22,9 @@ public class TutorialMod {
         BlockInit.BLOCKS.register(bus);
         ArmorMaterialInit.ARMOR_MATERIALS.register(bus);
         CreativeModeTabInit.CREATIVE_MODE_TABS.register(bus);
+
+        // bus
+        bus.addListener(DataGenerators::gatherData);
 
         bus.addListener(FMLClientSetupEvent.class, (fmlClientSetupEvent -> {
             fmlClientSetupEvent.enqueueWork(() -> {
