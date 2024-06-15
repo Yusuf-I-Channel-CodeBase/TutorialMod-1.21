@@ -41,10 +41,6 @@ public class TagsInit {
         return TagKey.create(BuiltInRegistries.BLOCK.key(), ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
     }
 
-    private static @NotNull TagKey<Item> createItemToolTag(String name) {
-        return TagKey.create(BuiltInRegistries.ITEM.key(), ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
-    }
-
     public static class ItemTagsInit {
 
         // Item Tags
