@@ -26,6 +26,7 @@ public class ModItemStateProvider extends ItemModelProvider {
 
         // tools
         tool(ItemInit.SWORD.get());
+        tool(ItemInit.PICKAXE.get());
     }
 
 

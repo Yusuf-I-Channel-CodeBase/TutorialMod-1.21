@@ -1,7 +1,8 @@
-// 1.21	2024-06-14T20:00:45.574165	Tags for minecraft:block mod id tutorialmod
-155db109f16b89eb19f46fd8f7dcf1fda23077ec data/minecraft/tags/block/mineable/pickaxe.json
-c83f9edda4547a4af3f0016fda0c2621839849b3 data/minecraft/tags/block/needs_diamond_tool.json
+// 1.21	2024-06-15T18:15:42.08051	Tags for minecraft:block mod id tutorialmod
+f87db1c083848b3581af3e4d30218e08d966b56b data/minecraft/tags/block/mineable/pickaxe.json
 f87db1c083848b3581af3e4d30218e08d966b56b data/minecraft/tags/block/needs_iron_tool.json
 c83f9edda4547a4af3f0016fda0c2621839849b3 data/tutorialmod/tags/block/example_block.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/tutorialmod/tags/block/incorrect_for_example_tool.json
+c83f9edda4547a4af3f0016fda0c2621839849b3 data/tutorialmod/tags/block/needs_example_tool.json
 da2ee27128dcabd679c7a80668a17537bbce2482 data/tutorialmod/tags/block/ores/deepslate_example_ore.json
 c87ceab65e9fee9e7098e332e5c7bcbd3bfe6e86 data/tutorialmod/tags/block/ores/example_ore.json

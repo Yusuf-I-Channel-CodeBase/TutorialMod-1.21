@@ -1,6 +1,7 @@
 package io.github.realyusufismail.tutorialmod.init;
 
 import io.github.realyusufismail.tutorialmod.TutorialMod;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -36,6 +37,14 @@ public class TagsInit {
         return ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "armour/" + name);
     }
 
+    public static @NotNull TagKey<Block> createToolTag(String name) {
+        return TagKey.create(BuiltInRegistries.BLOCK.key(), ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
+    }
+
+    private static @NotNull TagKey<Item> createItemToolTag(String name) {
+        return TagKey.create(BuiltInRegistries.ITEM.key(), ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
+    }
+
     public static class ItemTagsInit {
 
         // Item Tags
@@ -65,5 +74,14 @@ public class TagsInit {
 
         public static final TagKey<Block> DEEPSLATE_EXAMPLE_ORE_TAG =
                 BlockTags.create(createOresLocation("deepslate_example_ore"));
+
+
+        // Tags that determines what blocks this tool cannot break.
+        public static final TagKey<Block> INCORRECT_FOR_EXAMPLE_TOOL =
+                createToolTag("incorrect_for_example_tool");
+
+        // Tags that determines what blocks this tool can break.
+        public static final TagKey<Block> NEEDS_EXAMPLE_TOOL =
+                createToolTag("needs_example_tool");
     }
 }

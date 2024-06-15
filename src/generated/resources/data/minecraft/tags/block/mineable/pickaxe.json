@@ -1,7 +1,6 @@
 {
   "values": [
     "tutorialmod:example_ore",
-    "tutorialmod:deepslate_example_ore",
-    "tutorialmod:example_block"
+    "tutorialmod:deepslate_example_ore"
   ]
 }

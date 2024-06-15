@@ -40,6 +40,15 @@ public class NormalCraftingTableRecipeProvider extends MainModRecipeProvider {
                 .unlockedBy("has_item", has(ItemInit.EXAMPLE_ITEM.get()))
                 .save(output, getModId("example_item_sword_recipe"));
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ItemInit.PICKAXE.get(), 1)
+                .pattern("xxx")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('s', Items.STICK)
+                .define('x', ItemInit.EXAMPLE_ITEM.get())
+                .unlockedBy("has_item", has(ItemInit.EXAMPLE_ITEM.get()))
+                .save(output, getModId("example_item_pickaxe_recipe"));
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ItemInit.HELMET.get(), 1)
                 .pattern("xxx")
