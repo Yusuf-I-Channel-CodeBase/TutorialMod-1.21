@@ -30,6 +30,13 @@ public class ModItemStateProvider extends ItemModelProvider {
         // tools
         tool(ItemInit.SWORD.get());
         tool(ItemInit.PICKAXE.get());
+
+        // shield
+        ModelFile builtInEntityModel = new ModelFile.UncheckedModelFile("builtin/entity");
+
+        ModelFile graphiteShieldBlocking =
+                shieldBlockingModel("graphite_shield_blocking", builtInEntityModel, "example_block");
+        shieldModel("graphite_shield", builtInEntityModel, "example_block", graphiteShieldBlocking);
     }
 
 

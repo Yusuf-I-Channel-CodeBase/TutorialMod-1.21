@@ -1,5 +1,6 @@
 package io.github.realyusufismail.tutorialmod;
 
+import io.github.realyusufismail.tutorialmod.client.TutorialModShieldItemRendererProvider;
 import io.github.realyusufismail.tutorialmod.data.DataGenerators;
 import io.github.realyusufismail.tutorialmod.events.Events;
 import io.github.realyusufismail.tutorialmod.init.*;
@@ -25,6 +26,7 @@ public class TutorialMod {
         // bus
         bus.addListener(DataGenerators::gatherData);
         bus.addListener(Events::clientSetup);
+        bus.addListener(TutorialModShieldItemRendererProvider::init);
 
         bus.addListener(FMLClientSetupEvent.class, (fmlClientSetupEvent -> {
             fmlClientSetupEvent.enqueueWork(() -> {

@@ -1,7 +1,9 @@
-// 1.21	2024-06-15T17:54:51.685517	Item Models: tutorialmod
+// 1.21	2024-06-16T23:35:53.260465	Item Models: tutorialmod
 dbe88821c499df623ebb7ff6923d9ba7c904d4d2 assets/tutorialmod/models/item/boots.json
 5d0ea2821df43eeadbc82147b8ac34f4eadf454e assets/tutorialmod/models/item/chestplate.json
 f0c403b69c925ad55cd36b4c90d185294fe9cee4 assets/tutorialmod/models/item/example_item.json
+e2caf2c406fa18a5cff192921f9825964eb46558 assets/tutorialmod/models/item/graphite_shield.json
+49d3888aa7ba30796d38660f7ae1740b18b69c11 assets/tutorialmod/models/item/graphite_shield_blocking.json
 ad7e28aa62fa2a4cbc97b8e0c4e3fd9f6d43046b assets/tutorialmod/models/item/helmet.json
 0c29e43fdd35ecf0cc68cd01c83cf94e7c5523ea assets/tutorialmod/models/item/leggings.json
 148ebc0143a22652fd66eeccf1cae2158610b79d assets/tutorialmod/models/item/pickaxe.json
