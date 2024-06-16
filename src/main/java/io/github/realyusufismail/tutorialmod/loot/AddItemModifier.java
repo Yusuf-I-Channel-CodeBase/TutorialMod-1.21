@@ -1,5 +1,6 @@
 package io.github.realyusufismail.tutorialmod.loot;
 
+import com.google.common.base.Suppliers;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
@@ -19,8 +20,8 @@ import static io.github.realyusufismail.tutorialmod.init.LootModifierInit.LOOT_M
 // Add one item to a spefic lootable
 public class AddItemModifier extends LootModifier {
 
-    public static final Supplier<MapCodec<AddItemModifier>> CODEC_SUPPLIER = LOOT_MODIFIERS.register("add_item", () ->
-            RecordCodecBuilder.mapCodec(instance -> codecStart(instance)
+    public static final Supplier<MapCodec<AddItemModifier>> CODEC_SUPPLIER = Suppliers.memoize(() ->
+            RecordCodecBuilder.mapCodec(instance -> AddItemModifier.codecStart(instance)
                     .and(BuiltInRegistries.ITEM.byNameCodec().fieldOf("item").forGetter(addItemModifier -> addItemModifier.item))
                     .apply(instance, AddItemModifier::new)));
 

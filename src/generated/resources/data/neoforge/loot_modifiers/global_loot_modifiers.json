@@ -1,0 +1,7 @@
+{
+  "entries": [
+    "tutorialmod:example_item_from_creeper",
+    "tutorialmod:example_item_from_grass"
+  ],
+  "replace": false
+}

@@ -23,7 +23,7 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
     @Override
     protected void start() {
         // Add your loot modifiers here
-        add("example_item_from_grass_block", new AddItemModifier(new LootItemCondition[]{
+        add("example_item_from_grass", new AddItemModifier(new LootItemCondition[]{
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS_BLOCK).build(),
                 // 35% chance
                 LootItemRandomChanceCondition.randomChance(0.35f).build()},

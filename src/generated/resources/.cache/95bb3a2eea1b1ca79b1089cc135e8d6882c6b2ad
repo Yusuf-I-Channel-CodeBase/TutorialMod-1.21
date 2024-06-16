@@ -1,0 +1,4 @@
+// 1.21	2024-06-16T20:30:07.194335	Global Loot Modifiers : tutorialmod
+23392ec3b11095beaef4cf808566bf5908e0e444 data/neoforge/loot_modifiers/global_loot_modifiers.json
+fefa3069658736f749ab61b0ee68348bd9d26797 data/tutorialmod/loot_modifiers/example_item_from_creeper.json
+e6b797fab0e416aca876b6d3fff14193ca5a4cef data/tutorialmod/loot_modifiers/example_item_from_grass.json
