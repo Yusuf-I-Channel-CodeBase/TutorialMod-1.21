@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "x": {
-      "item": "tutorialmod:example_item"
+      "tag": "tutorialmod:example_item"
     }
   },
   "pattern": [

@@ -3,31 +3,31 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "tutorialmod:example_item"
+      "tag": "tutorialmod:example_item"
     },
     {
-      "item": "tutorialmod:example_item"
+      "tag": "tutorialmod:example_item"
     },
     {
-      "item": "tutorialmod:example_item"
+      "tag": "tutorialmod:example_item"
     },
     {
-      "item": "tutorialmod:example_item"
+      "tag": "tutorialmod:example_item"
     },
     {
-      "item": "tutorialmod:example_item"
+      "tag": "tutorialmod:example_item"
     },
     {
-      "item": "tutorialmod:example_item"
+      "tag": "tutorialmod:example_item"
     },
     {
-      "item": "tutorialmod:example_item"
+      "tag": "tutorialmod:example_item"
     },
     {
-      "item": "tutorialmod:example_item"
+      "tag": "tutorialmod:example_item"
     },
     {
-      "item": "tutorialmod:example_item"
+      "tag": "tutorialmod:example_item"
     }
   ],
   "result": {

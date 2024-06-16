@@ -32,6 +32,7 @@ public class ModEnLangProvider extends LanguageProvider {
         // tools
         addItem(ItemInit.SWORD, "Sword");
         addItem(ItemInit.PICKAXE, "Pickaxe");
+        addItem(ItemInit.GRAPHITE_SHIELD, "Graphite Shield");
 
         // others
         add(CreativeModeTabInit.TUTORIAL_MOD_TAB_ONE_TITLE, "Tutorial Mod");

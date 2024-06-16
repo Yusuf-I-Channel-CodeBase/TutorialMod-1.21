@@ -2,6 +2,7 @@ package io.github.realyusufismail.tutorialmod.init;
 
 import io.github.realyusufismail.tutorialmod.TutorialMod;
 import io.github.realyusufismail.tutorialmod.armour.ExampleArmour;
+import io.github.realyusufismail.tutorialmod.items.ModShieldItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
@@ -48,4 +49,5 @@ public class ItemInit {
 
     public static DeferredItem<Item> BOOTS = ITEMS.register("boots", () -> new ExampleArmour(ArmorItem.Type.BOOTS, 15));
 
+    public static DeferredItem<Item> GRAPHITE_SHIELD = ITEMS.register("graphite_shield", () -> new ModShieldItem(TierInit.SHIELD, 250));
 }

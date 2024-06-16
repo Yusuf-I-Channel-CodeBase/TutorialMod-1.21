@@ -18,4 +18,8 @@ public class TierInit {
     public static SimpleTier PICKAXE = new SimpleTier(
             TagsInit.BlockTagsInit.INCORRECT_FOR_EXAMPLE_TOOL, 250, 5f, 0f, 10, () ->
             Ingredient.of(TagsInit.ItemTagsInit.EXAMPLE_ITEM_TAG));
+
+    public static SimpleTier SHIELD = new SimpleTier(
+            TagsInit.BlockTagsInit.INCORRECT_FOR_EXAMPLE_TOOL, 250, 0f, 0f, 0, () ->
+            Ingredient.of(TagsInit.ItemTagsInit.EXAMPLE_ITEM_TAG));
 }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "tutorialmod:example_item_leggings_recipe"
+        "recipe": "tutorialmod:example_item_shield_recipe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "tutorialmod:example_item_leggings_recipe"
+      "tutorialmod:example_item_shield_recipe"
     ]
   }
 }

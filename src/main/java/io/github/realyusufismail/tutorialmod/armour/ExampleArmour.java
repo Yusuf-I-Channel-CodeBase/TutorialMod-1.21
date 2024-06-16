@@ -9,5 +9,4 @@ public class ExampleArmour extends ArmorItem implements IItemExtension {
     public ExampleArmour(Type pType, int durability) {
         super(ArmorMaterialInit.EXAMPLE_ARMOUR, pType, new Item.Properties().durability(pType.getDurability(durability)));
     }
-
 }

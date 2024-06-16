@@ -1,6 +1,7 @@
 package io.github.realyusufismail.tutorialmod;
 
 import io.github.realyusufismail.tutorialmod.data.DataGenerators;
+import io.github.realyusufismail.tutorialmod.events.Events;
 import io.github.realyusufismail.tutorialmod.init.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
@@ -23,6 +24,7 @@ public class TutorialMod {
 
         // bus
         bus.addListener(DataGenerators::gatherData);
+        bus.addListener(Events::clientSetup);
 
         bus.addListener(FMLClientSetupEvent.class, (fmlClientSetupEvent -> {
             fmlClientSetupEvent.enqueueWork(() -> {

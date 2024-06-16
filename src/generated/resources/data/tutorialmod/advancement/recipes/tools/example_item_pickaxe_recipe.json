@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "tutorialmod:example_item"
+            "items": "#tutorialmod:example_item"
           }
         ]
       },

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "tag": "tutorialmod:example_item"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:shield"
+    }
+  },
+  "pattern": [
+    " A ",
+    "SIS",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:graphite_shield"
+  }
+}

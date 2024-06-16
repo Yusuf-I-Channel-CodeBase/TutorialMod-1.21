@@ -6,7 +6,7 @@
       "item": "minecraft:stick"
     },
     "x": {
-      "item": "tutorialmod:example_item"
+      "tag": "tutorialmod:example_item"
     }
   },
   "pattern": [
