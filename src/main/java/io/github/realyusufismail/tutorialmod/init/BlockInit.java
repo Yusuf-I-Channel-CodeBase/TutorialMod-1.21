@@ -4,7 +4,6 @@ import io.github.realyusufismail.tutorialmod.TutorialMod;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -22,7 +21,7 @@ public class BlockInit {
                     .explosionResistance(10.0f)
                     .sound(SoundType.METAL)
                     .lightLevel(state -> 7)
-            //.requiresCorrectToolForDrops()
+                    //.requiresCorrectToolForDrops()
             ));
 
     public static final DeferredBlock<Block> EXAMPLE_ORE = registerBlock("example_ore", () ->

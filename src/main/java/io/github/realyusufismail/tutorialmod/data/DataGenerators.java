@@ -2,6 +2,7 @@ package io.github.realyusufismail.tutorialmod.data;
 
 import io.github.realyusufismail.tutorialmod.TutorialMod;
 import io.github.realyusufismail.tutorialmod.data.lang.ModEnLangProvider;
+import io.github.realyusufismail.tutorialmod.data.loot.ModGlobalLootModifiersProvider;
 import io.github.realyusufismail.tutorialmod.data.lootable.ModLootTables;
 import io.github.realyusufismail.tutorialmod.data.recipe.MainModRecipeProvider;
 import io.github.realyusufismail.tutorialmod.data.tags.ModBlockTagsProvider;
@@ -28,6 +29,7 @@ public class DataGenerators {
             ModBlockTagsProvider blockTagsProvider = new ModBlockTagsProvider(output, event.getLookupProvider(), existingFileHelper);
             generator.addProvider(true, blockTagsProvider);
             generator.addProvider(true, new ModItemTagProvider(output, event.getLookupProvider(), blockTagsProvider, existingFileHelper));
+            generator.addProvider(true, new ModGlobalLootModifiersProvider(output, event.getLookupProvider()));
         } catch (RuntimeException e) {
             TutorialMod.logger.error("Failed to generate data", e);
         }

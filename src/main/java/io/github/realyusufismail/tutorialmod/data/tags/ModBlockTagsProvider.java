@@ -13,7 +13,6 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import javax.annotation.Nullable;
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 /**
