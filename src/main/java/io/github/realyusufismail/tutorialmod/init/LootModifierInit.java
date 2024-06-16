@@ -3,6 +3,7 @@ package io.github.realyusufismail.tutorialmod.init;
 import com.mojang.serialization.MapCodec;
 import io.github.realyusufismail.tutorialmod.TutorialMod;
 import io.github.realyusufismail.tutorialmod.loot.AddItemModifier;
+import io.github.realyusufismail.tutorialmod.loot.DungeonLootEnhancerModifier;
 import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -14,4 +15,5 @@ public class LootModifierInit {
 
     public static final DeferredHolder<MapCodec<? extends IGlobalLootModifier>, MapCodec<AddItemModifier>> ADD_ITEM_MODIFIER = LOOT_MODIFIERS.register("add_item", AddItemModifier.CODEC_SUPPLIER);
 
+    private static final DeferredHolder<MapCodec<? extends IGlobalLootModifier>, MapCodec<DungeonLootEnhancerModifier>> DUNGEON_LOOT = LOOT_MODIFIERS.register("dungeon_loot", DungeonLootEnhancerModifier.CODEC_SUPPLIER);
 }
