@@ -1,0 +1,66 @@
+{
+  "criteria": {
+    "example_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "example_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:chestplate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "example_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "example_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:leggings"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tutorialmod.example_armor.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "tutorialmod:helmet"
+    },
+    "title": {
+      "translate": "advancements.tutorialmod.example_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "example_helmet",
+      "example_chestplate",
+      "example_leggings",
+      "example_boots"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "tutorialmod:example_ingot",
+  "criteria": {
+    "get_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:block/light_blue_wool.png",
+    "description": {
+      "translate": "advancements.tutorialmod.pickaxe.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "tutorialmod:pickaxe"
+    },
+    "title": {
+      "translate": "advancements.tutorialmod.pickaxe.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_pickaxe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "tutorialmod:raw_example",
+  "criteria": {
+    "get_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:example_item"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:block/light_blue_wool.png",
+    "description": {
+      "translate": "advancements.tutorialmod.example_ingot.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "tutorialmod:example_item"
+    },
+    "title": {
+      "translate": "advancements.tutorialmod.example_ingot.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

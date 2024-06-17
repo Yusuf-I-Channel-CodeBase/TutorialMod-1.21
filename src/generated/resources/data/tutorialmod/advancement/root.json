@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "root": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:crafting_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:block/light_blue_wool.png",
+    "description": {
+      "translate": "advancements.tutorialmod.root.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "tutorialmod:example_item"
+    },
+    "title": {
+      "translate": "advancements.tutorialmod.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "root"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

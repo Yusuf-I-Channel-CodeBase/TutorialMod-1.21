@@ -1,0 +1,35 @@
+{
+  "parent": "tutorialmod:example_ingot",
+  "criteria": {
+    "get_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:block/light_blue_wool.png",
+    "description": {
+      "translate": "advancements.tutorialmod.sword.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "tutorialmod:sword"
+    },
+    "title": {
+      "translate": "advancements.tutorialmod.sword.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_sword"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

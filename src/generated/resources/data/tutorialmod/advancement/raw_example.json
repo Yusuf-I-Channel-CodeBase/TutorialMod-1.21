@@ -1,0 +1,35 @@
+{
+  "parent": "tutorialmod:root",
+  "criteria": {
+    "get_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:raw_example"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:block/light_blue_wool.png",
+    "description": {
+      "translate": "advancements.tutorialmod.raw_example.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "tutorialmod:raw_example"
+    },
+    "title": {
+      "translate": "advancements.tutorialmod.raw_example.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_ore"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
