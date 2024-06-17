@@ -5,26 +5,19 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import io.github.realyusufismail.tutorialmod.TutorialMod;
 import io.github.realyusufismail.tutorialmod.init.ItemInit;
 import io.github.realyusufismail.tutorialmod.items.ModShieldItem;
+import io.github.realyusufismail.tutorialmod.material.ShieldMaterial;
 import net.minecraft.client.model.ShieldModel;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.resources.model.Material;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.server.packs.resources.ResourceManager;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 
-import java.util.Locale;
-import java.util.function.Function;
-
 public class TutorialModShieldItemRenderer extends ModBlockEntityWithoutLevelRenderer {
-    private static final Material SHIELD_GRAPHITE = new Material(
-            InventoryMenu.BLOCK_ATLAS, ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "entity/shield/graphite")
-    );
 
     private ShieldModel shieldModel;
 
@@ -46,14 +39,15 @@ public class TutorialModShieldItemRenderer extends ModBlockEntityWithoutLevelRen
                              int combinedOverlay) {
         try {
             if (stack.getItem() instanceof ModShieldItem) {
-                //boolean isGraphite = stack.is(ItemInit.GRAPHITE_SHIELD.get());
-
                 poseStack.pushPose();
-                poseStack.scale(1.0f, -1.0f, -1.0f);
-                Material material = SHIELD_GRAPHITE;
+                poseStack.scale(1.0F, -1.0F, -1.0F);
 
-                if (this.shieldModel == null) {
-                    throw new NullPointerException("Shield model is null");
+                Material material;
+
+                if (stack.is(ItemInit.GRAPHITE_SHIELD.get())) {
+                    material = ShieldMaterial.SHIELD_BASE_GRAPHITE;
+                } else {
+                    material = ModelBakery.SHIELD_BASE;
                 }
 
                 TextureAtlasSprite sprite = material.sprite();
@@ -64,18 +58,9 @@ public class TutorialModShieldItemRenderer extends ModBlockEntityWithoutLevelRen
                                 true,
                                 stack.hasFoil()));
 
-                this.shieldModel.handle().render(
-                        poseStack,
-                        vertexConsumer,
-                        combinedLight,
-                        combinedOverlay
-                );
-                this.shieldModel.plate().render(
-                        poseStack,
-                        vertexConsumer,
-                        combinedLight,
-                        combinedOverlay
-                );
+                this.shieldModel.handle().render(poseStack, vertexConsumer, combinedLight, combinedOverlay);
+
+                this.shieldModel.plate().render(poseStack, vertexConsumer, combinedLight, combinedOverlay);
 
                 poseStack.popPose();
             }

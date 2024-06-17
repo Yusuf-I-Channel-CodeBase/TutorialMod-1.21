@@ -15,8 +15,6 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
-import static io.github.realyusufismail.tutorialmod.init.LootModifierInit.LOOT_MODIFIERS;
-
 // Add one item to a spefic lootable
 public class AddItemModifier extends LootModifier {
 
