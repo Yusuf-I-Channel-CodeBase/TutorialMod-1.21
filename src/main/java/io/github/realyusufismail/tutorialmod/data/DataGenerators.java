@@ -10,6 +10,7 @@ import io.github.realyusufismail.tutorialmod.data.tags.ModBlockTagsProvider;
 import io.github.realyusufismail.tutorialmod.data.tags.ModItemTagProvider;
 import io.github.realyusufismail.tutorialmod.data.texture.ModBlockStateProvider;
 import io.github.realyusufismail.tutorialmod.data.texture.ModItemStateProvider;
+import io.github.realyusufismail.tutorialmod.data.worldgen.ModWorldGenProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -32,6 +33,7 @@ public class DataGenerators {
             generator.addProvider(true, new ModItemTagProvider(output, event.getLookupProvider(), blockTagsProvider, existingFileHelper));
             generator.addProvider(true, new ModGlobalLootModifiersProvider(output, event.getLookupProvider()));
             generator.addProvider(true, new ModAdvancementProvider(output, event.getLookupProvider(), existingFileHelper));
+            generator.addProvider(true, new ModWorldGenProvider(output, event.getLookupProvider()));
         } catch (RuntimeException e) {
             TutorialMod.logger.error("Failed to generate data", e);
         }
