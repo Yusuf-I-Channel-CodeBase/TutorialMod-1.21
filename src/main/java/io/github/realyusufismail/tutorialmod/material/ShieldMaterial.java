@@ -12,5 +12,4 @@ public class ShieldMaterial {
     public static final Material SHIELD_BASE_GRAPHITE_NO_PATTERN = new Material(
             net.minecraft.client.renderer.Sheets.SHIELD_SHEET,
             ResourceLocation.fromNamespaceAndPath("tutorialmod", "entity/shield/shield_base_nopattern"));
-
 }

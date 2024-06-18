@@ -1,6 +1,6 @@
-package io.github.realyusufismail.tutorialmod.client;
+package io.github.realyusufismail.tutorialmod.client.shield;
 
-import io.github.realyusufismail.tutorialmod.client.render.TutorialModShieldItemRenderer;
+import io.github.realyusufismail.tutorialmod.client.render.shield.TutorialModShieldItemRenderer;
 import net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import org.jetbrains.annotations.NotNull;

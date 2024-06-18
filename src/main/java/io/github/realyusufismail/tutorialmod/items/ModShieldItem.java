@@ -1,6 +1,6 @@
 package io.github.realyusufismail.tutorialmod.items;
 
-import io.github.realyusufismail.tutorialmod.client.TutorialModShieldItemRendererProvider;
+import io.github.realyusufismail.tutorialmod.client.shield.TutorialModShieldItemRendererProvider;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ShieldItem;
 import net.minecraft.world.item.Tier;

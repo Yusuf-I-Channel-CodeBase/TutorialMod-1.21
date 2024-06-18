@@ -1,6 +1,6 @@
 package io.github.realyusufismail.tutorialmod;
 
-import io.github.realyusufismail.tutorialmod.client.TutorialModShieldItemRendererProvider;
+import io.github.realyusufismail.tutorialmod.client.shield.TutorialModShieldItemRendererProvider;
 import io.github.realyusufismail.tutorialmod.data.DataGenerators;
 import io.github.realyusufismail.tutorialmod.events.Events;
 import io.github.realyusufismail.tutorialmod.init.*;

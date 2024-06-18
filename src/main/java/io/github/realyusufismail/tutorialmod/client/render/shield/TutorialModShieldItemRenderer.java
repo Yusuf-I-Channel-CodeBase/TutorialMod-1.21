@@ -1,8 +1,9 @@
-package io.github.realyusufismail.tutorialmod.client.render;
+package io.github.realyusufismail.tutorialmod.client.render.shield;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import io.github.realyusufismail.tutorialmod.TutorialMod;
+import io.github.realyusufismail.tutorialmod.client.render.ModBlockEntityWithoutLevelRenderer;
 import io.github.realyusufismail.tutorialmod.init.ItemInit;
 import io.github.realyusufismail.tutorialmod.items.ModShieldItem;
 import io.github.realyusufismail.tutorialmod.material.ShieldMaterial;
