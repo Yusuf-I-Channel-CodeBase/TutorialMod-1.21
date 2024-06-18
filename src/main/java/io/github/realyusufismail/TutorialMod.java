@@ -1,5 +1,8 @@
 package io.github.realyusufismail;
 
+import io.github.realyusufismail.data.DataGenerators;
+import io.github.realyusufismail.init.CreativeModeTabInit;
+import io.github.realyusufismail.init.ItemInit;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
@@ -14,6 +17,10 @@ public class TutorialMod {
     public static final Logger logger = LoggerFactory.getLogger(TutorialMod.class);
 
     public TutorialMod(@NotNull IEventBus bus) {
+        ItemInit.ITEMS.register(bus);
+        CreativeModeTabInit.CREATIVE_MODE_TABS.register(bus);
+
+        bus.addListener(DataGenerators::gatherData);
 
         bus.addListener(FMLClientSetupEvent.class, (fmlClientSetupEvent -> {
             fmlClientSetupEvent.enqueueWork(() -> {
