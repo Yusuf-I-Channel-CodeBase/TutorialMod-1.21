@@ -1,6 +1,7 @@
 package io.github.realyusufismail.data.lang;
 
 import io.github.realyusufismail.TutorialMod;
+import io.github.realyusufismail.init.BlockInit;
 import io.github.realyusufismail.init.CreativeModeTabInit;
 import io.github.realyusufismail.init.ItemInit;
 import net.minecraft.data.PackOutput;
@@ -17,6 +18,8 @@ public class ModEnLangProvider extends LanguageProvider {
         // Items
         addItem(ItemInit.EXAMPLE_ITEM, "Example Item");
 
+        //Blocks
+        addBlock(BlockInit.EXAMPLE_BLOCK, "Example Block");
 
         // others
         add(CreativeModeTabInit.TUTORIAL_MOD_TAB_ONE_TITLE, "Tutorial Mod");
