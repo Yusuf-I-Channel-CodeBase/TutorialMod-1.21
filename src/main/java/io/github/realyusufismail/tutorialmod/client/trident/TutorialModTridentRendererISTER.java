@@ -17,7 +17,7 @@ public class TutorialModTridentRendererISTER extends ModBlockEntityWithoutLevelR
 
     private TridentModel tridentModel;
     private final ModelResourceLocation modelResourceLocation =
-            new ModelResourceLocation(ResourceLocation.fromNamespaceAndPath("tutorialmod", "example_trident"), "example_trident");
+            new ModelResourceLocation(ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "example_trident"), "example_trident");
     private final ResourceLocation textureLocation =
             ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "entity/trident/example_trident");
 
