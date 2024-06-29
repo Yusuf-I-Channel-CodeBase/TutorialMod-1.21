@@ -1,2 +1,4 @@
-// 1.21	2024-06-19T15:13:52.90318	Tags for minecraft:block mod id tutorialmod
-c83f9edda4547a4af3f0016fda0c2621839849b3 data/minecraft/tags/block/mineable/pickaxe.json
+// 1.21	2024-06-29T09:32:44.037156	Tags for minecraft:block mod id tutorialmod
+b8703e5871ce664cf6783f815f1c5120f04d8ce8 data/minecraft/tags/block/mineable/pickaxe.json
+b8703e5871ce664cf6783f815f1c5120f04d8ce8 data/minecraft/tags/block/needs_iron_tool.json
+c83f9edda4547a4af3f0016fda0c2621839849b3 data/tutorialmod/tags/block/example_block.json

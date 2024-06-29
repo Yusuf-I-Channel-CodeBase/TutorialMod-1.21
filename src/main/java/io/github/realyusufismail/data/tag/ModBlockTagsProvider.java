@@ -2,6 +2,7 @@ package io.github.realyusufismail.data.tag;
 
 import io.github.realyusufismail.TutorialMod;
 import io.github.realyusufismail.init.BlockInit;
+import io.github.realyusufismail.init.TagsInit;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -19,7 +20,13 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+        tag(TagsInit.BlockTagsInit.EXAMPLE_BLOCK_TAG)
                 .add(BlockInit.EXAMPLE_BLOCK.get());
+
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addTag(TagsInit.BlockTagsInit.EXAMPLE_BLOCK_TAG);
+
+       // TagKey<Block> netherite = createNeoForgeTag("needs_netherite_tool")
+       tag(BlockTags.NEEDS_IRON_TOOL).addTag(TagsInit.BlockTagsInit.EXAMPLE_BLOCK_TAG);
     }
 }
