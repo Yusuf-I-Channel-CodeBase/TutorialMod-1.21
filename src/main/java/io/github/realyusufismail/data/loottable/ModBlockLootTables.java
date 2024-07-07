@@ -2,6 +2,7 @@ package io.github.realyusufismail.data.loottable;
 
 import io.github.realyusufismail.TutorialMod;
 import io.github.realyusufismail.init.BlockInit;
+import io.github.realyusufismail.init.ItemInit;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -22,6 +23,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        add(BlockInit.EXAMPLE_ORE.get(), createOreDrop(BlockInit.EXAMPLE_ORE.get(), ItemInit.RAW_EXAMPLE.get()));
+        add(BlockInit.DEEPSLATE_EXAMPLE_ORE.get(), createOreDrop(BlockInit.DEEPSLATE_EXAMPLE_ORE.get(), ItemInit.RAW_EXAMPLE.get()));
+
         dropSelf(BlockInit.EXAMPLE_BLOCK.get());
     }
 

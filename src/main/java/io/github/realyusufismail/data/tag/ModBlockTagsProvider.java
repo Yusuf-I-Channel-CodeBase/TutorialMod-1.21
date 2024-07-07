@@ -23,10 +23,21 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(TagsInit.BlockTagsInit.EXAMPLE_BLOCK_TAG)
                 .add(BlockInit.EXAMPLE_BLOCK.get());
 
+        tag(TagsInit.BlockTagsInit.EXAMPLE_ORE_TAG)
+                .add(BlockInit.EXAMPLE_ORE.get());
+
+        tag(TagsInit.BlockTagsInit.DEEPSLATE_EXAMPLE_ORE_TAG)
+                .add(BlockInit.DEEPSLATE_EXAMPLE_ORE.get());
+
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .addTag(TagsInit.BlockTagsInit.EXAMPLE_BLOCK_TAG);
+                .addTag(TagsInit.BlockTagsInit.EXAMPLE_BLOCK_TAG)
+                .addTag(TagsInit.BlockTagsInit.EXAMPLE_ORE_TAG)
+                .addTag(TagsInit.BlockTagsInit.DEEPSLATE_EXAMPLE_ORE_TAG);
 
        // TagKey<Block> netherite = createNeoForgeTag("needs_netherite_tool")
-       tag(BlockTags.NEEDS_IRON_TOOL).addTag(TagsInit.BlockTagsInit.EXAMPLE_BLOCK_TAG);
+       tag(BlockTags.NEEDS_IRON_TOOL)
+                .addTag(TagsInit.BlockTagsInit.EXAMPLE_BLOCK_TAG)
+                .addTag(TagsInit.BlockTagsInit.EXAMPLE_ORE_TAG)
+                .addTag(TagsInit.BlockTagsInit.DEEPSLATE_EXAMPLE_ORE_TAG);
     }
 }

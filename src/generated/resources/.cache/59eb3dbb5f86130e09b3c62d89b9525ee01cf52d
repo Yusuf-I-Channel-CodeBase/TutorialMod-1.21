@@ -1,2 +1,4 @@
-// 1.21	2024-06-19T15:13:52.90298	Loot Tables
+// 1.21	2024-07-07T11:31:07.583452	Loot Tables
+1bf82b0d74eb53d1620cfcf321d97992928eee23 data/tutorialmod/loot_table/blocks/deepslate_example_ore.json
 3eea00e49eaa96daa00abd9020cfd7f9f198d9d9 data/tutorialmod/loot_table/blocks/example_block.json
+9799f9b0ca7efd076615aadca332967fd286c300 data/tutorialmod/loot_table/blocks/example_ore.json

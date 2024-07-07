@@ -17,9 +17,16 @@ public class ModEnLangProvider extends LanguageProvider {
     protected void addTranslations() {
         // Items
         addItem(ItemInit.EXAMPLE_ITEM, "Example Item");
+        addItem(ItemInit.RAW_EXAMPLE, "Raw Example");
 
         //Blocks
         addBlock(BlockInit.EXAMPLE_BLOCK, "Example Block");
+
+        // Ores
+        addBlock(BlockInit.EXAMPLE_ORE, "Example Ore");
+
+        // Deepslate Ores
+        addBlock(BlockInit.DEEPSLATE_EXAMPLE_ORE, "Deepslate Example Ore");
 
         // others
         add(CreativeModeTabInit.TUTORIAL_MOD_TAB_ONE_TITLE, "Tutorial Mod");

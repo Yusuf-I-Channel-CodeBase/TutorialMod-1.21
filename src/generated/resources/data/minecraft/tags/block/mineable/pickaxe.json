@@ -1,5 +1,7 @@
 {
   "values": [
-    "#tutorialmod:example_block"
+    "#tutorialmod:example_block",
+    "#tutorialmod:ores/example_ore",
+    "#tutorialmod:ores/deepslate_example_ore"
   ]
 }

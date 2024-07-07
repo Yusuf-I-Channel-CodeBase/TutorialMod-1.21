@@ -17,6 +17,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         normalBlock(BlockInit.EXAMPLE_BLOCK.get());
+        normalBlock(BlockInit.EXAMPLE_ORE.get());
+        normalBlock(BlockInit.DEEPSLATE_EXAMPLE_ORE.get());
     }
 
     private void normalBlock(Block block) {
