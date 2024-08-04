@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "tutorialmod:example_item"
+    },
+    {
+      "tag": "tutorialmod:example_item"
+    },
+    {
+      "tag": "tutorialmod:example_item"
+    },
+    {
+      "tag": "tutorialmod:example_item"
+    },
+    {
+      "tag": "tutorialmod:example_item"
+    },
+    {
+      "tag": "tutorialmod:example_item"
+    },
+    {
+      "tag": "tutorialmod:example_item"
+    },
+    {
+      "tag": "tutorialmod:example_item"
+    },
+    {
+      "tag": "tutorialmod:example_item"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:example_block"
+  }
+}

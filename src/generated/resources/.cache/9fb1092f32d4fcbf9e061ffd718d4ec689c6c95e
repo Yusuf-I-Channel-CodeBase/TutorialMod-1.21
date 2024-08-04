@@ -1,0 +1,7 @@
+// 1.21	2024-08-04T13:22:38.168668	Recipes
+731b5bf1a8bbeaaed217547a6433019e7390838c data/tutorialmod/advancement/recipes/building_blocks/example_item_block_recipe.json
+7b867508b67863be809fa46c4e1b740fec380d56 data/tutorialmod/advancement/recipes/misc/example_item_blasting.json
+a050ec14fc2c84a2ff8adb20aa773aebe32be997 data/tutorialmod/advancement/recipes/misc/example_item_smelting.json
+c351e92c2123e8f2098724a5f71b3c787a5aed83 data/tutorialmod/recipe/example_item_blasting.json
+0fed20b6a6868d1728edd55a493cf75be54b7116 data/tutorialmod/recipe/example_item_block_recipe.json
+4eb6f6e1a18a712d7739d8e9361878149495aa61 data/tutorialmod/recipe/example_item_smelting.json

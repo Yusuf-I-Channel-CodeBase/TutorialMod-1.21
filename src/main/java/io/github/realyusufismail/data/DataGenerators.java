@@ -3,6 +3,7 @@ package io.github.realyusufismail.data;
 import io.github.realyusufismail.TutorialMod;
 import io.github.realyusufismail.data.lang.ModEnLangProvider;
 import io.github.realyusufismail.data.loottable.ModLootTables;
+import io.github.realyusufismail.data.recipe.MainModRecipeProvider;
 import io.github.realyusufismail.data.tag.ModBlockTagsProvider;
 import io.github.realyusufismail.data.tag.ModItemTagProvider;
 import io.github.realyusufismail.data.texture.ModBlockStateProvider;
@@ -29,6 +30,7 @@ public class DataGenerators {
             generator.addProvider(true, new ModItemTagProvider(output, event.getLookupProvider(), modBlockTagsProvider, existingFileHelper));
             generator.addProvider(true, new ModLootTables(output, event.getLookupProvider()));
             generator.addProvider(true, new ModWorldGenProvider(output, event.getLookupProvider()));
+            generator.addProvider(true, new MainModRecipeProvider(generator, event.getLookupProvider()));
         } catch (RuntimeException e) {
             TutorialMod.logger.error("Failed to gather data", e);
         }
