@@ -8,6 +8,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +28,7 @@ public class TutorialMod {
         bus.addListener(DataGenerators::gatherData);
         bus.addListener(Events::clientSetup);
         bus.addListener(TutorialModShieldItemRendererProvider::init);
+        NeoForge.EVENT_BUS.addListener(Events::onPlayerTickEventPre);
 
         bus.addListener(FMLClientSetupEvent.class, (fmlClientSetupEvent -> {
             fmlClientSetupEvent.enqueueWork(() -> {
