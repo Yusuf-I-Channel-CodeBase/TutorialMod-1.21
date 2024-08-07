@@ -3,6 +3,7 @@ package io.github.realyusufismail.tutorialmod.init;
 import io.github.realyusufismail.tutorialmod.TutorialMod;
 import io.github.realyusufismail.tutorialmod.armour.ExampleArmour;
 import io.github.realyusufismail.tutorialmod.items.ModShieldItem;
+import io.github.realyusufismail.tutorialmod.items.ModSwordItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
@@ -17,14 +18,14 @@ public class ItemInit {
 
     public static final DeferredItem<Item> RAW_EXAMPLE = ITEMS.register("raw_example", () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> SWORD = ITEMS.register("sword", () -> new SwordItem(TierInit.SWORD,
+    public static final DeferredItem<ModSwordItem> SWORD = ITEMS.register("sword", () -> new ModSwordItem(TierInit.SWORD,
             new Item.Properties()
                     .attributes(SwordItem.createAttributes(
                             TierInit.SWORD,
-                            // The type-specific attack damage bonus. 3 for swords, 1.5 for shovels, 1 for pickaxes, varying for axes and hoes.
-                            8,
-                            // The type-specific attack speed modifier. The player has a default attack speed of 4, so to get to the desired
-                            // value of 1.6f, we use -2.4f. -2.4f for swords, -3f for shovels, -2.8f for pickaxes, varying for axes and hoes.
+                            // The type-specific attack damage. Its calculated by adding this and the attack damage bonus, set in the tier.
+                            // We have 5 here and an attack damage bonus of 1, so the sword will do 7 damage, as an extra 1 is added by default.
+                            5,
+                            // The type-specific attack speed modifier.
                             -2.6f
                     ))
                     .stacksTo(1)));
@@ -33,10 +34,7 @@ public class ItemInit {
             new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(
                             TierInit.PICKAXE,
-                            // The type-specific attack damage bonus. 3 for swords, 1.5 for shovels, 1 for pickaxes, varying for axes and hoes.
                             5,
-                            // The type-specific attack speed modifier. The player has a default attack speed of 4, so to get to the desired
-                            // value of 1.6f, we use -2.4f. -2.4f for swords, -3f for shovels, -2.8f for pickaxes, varying for axes and hoes.
                             -2.8f
                     ))
                     .stacksTo(1)));

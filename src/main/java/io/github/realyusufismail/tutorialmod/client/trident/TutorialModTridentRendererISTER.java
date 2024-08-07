@@ -3,7 +3,6 @@ package io.github.realyusufismail.tutorialmod.client.trident;
 import com.mojang.blaze3d.vertex.PoseStack;
 import io.github.realyusufismail.tutorialmod.TutorialMod;
 import io.github.realyusufismail.tutorialmod.client.render.ModBlockEntityWithoutLevelRenderer;
-import io.github.realyusufismail.tutorialmod.init.ItemInit;
 import net.minecraft.client.model.TridentModel;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.MultiBufferSource;

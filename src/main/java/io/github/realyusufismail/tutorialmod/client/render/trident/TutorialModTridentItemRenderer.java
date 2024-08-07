@@ -36,8 +36,8 @@ public class TutorialModTridentItemRenderer extends EntityRenderer<ThrownTrident
                 ItemRenderer.getFoilBufferDirect(
                         pBuffer,
                         tridentModel.renderType(getTextureLocation(pEntity)),
-                false,
-                pEntity.isFoil());
+                        false,
+                        pEntity.isFoil());
         tridentModel.renderToBuffer(pPoseStack, vertexConsumer, pPackedLight, OverlayTexture.NO_OVERLAY);
         pPoseStack.popPose();
         super.render(pEntity, pEntityYaw, pPartialTick, pPoseStack, pBuffer, pPackedLight);

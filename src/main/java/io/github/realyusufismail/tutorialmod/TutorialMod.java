@@ -18,6 +18,8 @@ public class TutorialMod {
     public static Logger logger = LoggerFactory.getLogger(TutorialMod.class);
 
     public TutorialMod(IEventBus bus) {
+        IEventBus neoForgeBus = NeoForge.EVENT_BUS;
+
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
         ArmorMaterialInit.ARMOR_MATERIALS.register(bus);
@@ -28,7 +30,8 @@ public class TutorialMod {
         bus.addListener(DataGenerators::gatherData);
         bus.addListener(Events::clientSetup);
         bus.addListener(TutorialModShieldItemRendererProvider::init);
-        NeoForge.EVENT_BUS.addListener(Events::onPlayerTickEventPre);
+        neoForgeBus.addListener(Events::onPlayerTickEventPre);
+        neoForgeBus.addListener(Events::onEntityDamage);
 
         bus.addListener(FMLClientSetupEvent.class, (fmlClientSetupEvent -> {
             fmlClientSetupEvent.enqueueWork(() -> {
