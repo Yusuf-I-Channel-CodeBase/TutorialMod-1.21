@@ -26,7 +26,7 @@ import java.util.Optional;
 import java.util.function.Consumer;
 
 public class ModAdvancementGenerator implements AdvancementProvider.AdvancementGenerator {
-    private static ResourceLocation LIGHT_BLUE_WOOL = ResourceLocation.withDefaultNamespace("block/light_blue_wool.png");
+    private static final ResourceLocation LIGHT_BLUE_WOOL = ResourceLocation.withDefaultNamespace("block/light_blue_wool.png");
 
     @Override
     public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> saver, ExistingFileHelper existingFileHelper) {
@@ -79,7 +79,7 @@ public class ModAdvancementGenerator implements AdvancementProvider.AdvancementG
                 .addCriterion("get_ingot", getItem(ItemInit.EXAMPLE_ITEM.get()))
                 .save(saver, getId("example_ingot"));
 
-        AdvancementHolder exampleBlock = Advancement.Builder.advancement()
+        Advancement.Builder.advancement()
                 .display(
                         new ItemStack(BlockInit.EXAMPLE_BLOCK.get()),
                         getTitle("example_block"),

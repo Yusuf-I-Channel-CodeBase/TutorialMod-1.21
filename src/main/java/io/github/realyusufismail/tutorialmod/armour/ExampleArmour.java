@@ -57,8 +57,8 @@ public class ExampleArmour extends ArmorItem implements IItemExtension {
                 }
 
                 if (!player.hasEffect(MobEffects.REGENERATION)) {
-                    // 100 is 00:05
-                    player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, getMinutesInTicks(2), 0, false, false, true));
+                    player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, getMinutesInTicks(2),
+                            0, false, false, true));
                 }
             } else {
                 if (attributeInstance.hasModifier(ENABLE_FLIGHT_RL)) {

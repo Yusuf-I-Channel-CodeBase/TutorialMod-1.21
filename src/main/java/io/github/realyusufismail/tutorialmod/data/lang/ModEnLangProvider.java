@@ -36,5 +36,19 @@ public class ModEnLangProvider extends LanguageProvider {
 
         // others
         add(CreativeModeTabInit.TUTORIAL_MOD_TAB_ONE_TITLE, "Tutorial Mod");
+
+        // advancements
+        addAdvancement("root", "Using Tutorial Mod", "Thanks for using the tutorial mod!");
+        addAdvancement("raw_example", "Raw Example", "You have mined some raw example!");
+        addAdvancement("example", "Example", "You have smelted some example!");
+        addAdvancement("example_block", "Example Block", "You have crafted an example block!");
+        addAdvancement("sword", "Sword", "You have crafted an example sword!");
+        addAdvancement("pickaxe", "Pickaxe", "You have crafted an example pickaxe!");
+        addAdvancement("example_armor", "Example Armor", "You have crafted an example armor set!");
+    }
+
+    private void addAdvancement(String advancement, String title, String description) {
+        add("advancements." + TutorialMod.MOD_ID + "." + advancement + ".title", title);
+        add("advancements." + TutorialMod.MOD_ID + "." + advancement + ".description", description);
     }
 }
