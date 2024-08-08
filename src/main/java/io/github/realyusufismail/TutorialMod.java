@@ -1,10 +1,7 @@
 package io.github.realyusufismail;
 
 import io.github.realyusufismail.data.DataGenerators;
-import io.github.realyusufismail.init.BlockInit;
-import io.github.realyusufismail.init.CreativeModeTabInit;
-import io.github.realyusufismail.init.ItemInit;
-import io.github.realyusufismail.init.LootModifierInit;
+import io.github.realyusufismail.init.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
@@ -23,6 +20,7 @@ public class TutorialMod {
         BlockInit.BLOCKS.register(bus);
         CreativeModeTabInit.CREATIVE_MODE_TABS.register(bus);
         LootModifierInit.LOOT_MODIFIERS.register(bus);
+        ArmorMaterialInit.ARMOR_MATERIALS.register(bus);
 
         bus.addListener(DataGenerators::gatherData);
 

@@ -2,7 +2,11 @@
   "block.tutorialmod.deepslate_example_ore": "Deepslate Example Ore",
   "block.tutorialmod.example_block": "Example Block",
   "block.tutorialmod.example_ore": "Example Ore",
+  "item.tutorialmod.boots": "Boots",
+  "item.tutorialmod.chestplate": "Chestplate",
   "item.tutorialmod.example_item": "Example Item",
+  "item.tutorialmod.helmet": "Helmet",
+  "item.tutorialmod.leggings": "Leggings",
   "item.tutorialmod.raw_example": "Raw Example",
   "tutorialmod.tab.one": "Tutorial Mod"
 }

@@ -18,6 +18,11 @@ public class ModItemStateProvider extends ItemModelProvider {
     protected void registerModels() {
         item(ItemInit.EXAMPLE_ITEM.get());
         item(ItemInit.RAW_EXAMPLE.get());
+
+        item(ItemInit.HELMET.get());
+        item(ItemInit.CHESTPLATE.get());
+        item(ItemInit.LEGGINGS.get());
+        item(ItemInit.BOOTS.get());
     }
 
     private void item(Item item) {

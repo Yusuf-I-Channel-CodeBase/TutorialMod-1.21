@@ -19,6 +19,12 @@ public class ModEnLangProvider extends LanguageProvider {
         addItem(ItemInit.EXAMPLE_ITEM, "Example Item");
         addItem(ItemInit.RAW_EXAMPLE, "Raw Example");
 
+        // Armor
+        addItem(ItemInit.HELMET, "Helmet");
+        addItem(ItemInit.CHESTPLATE, "Chestplate");
+        addItem(ItemInit.LEGGINGS, "Leggings");
+        addItem(ItemInit.BOOTS, "Boots");
+
         //Blocks
         addBlock(BlockInit.EXAMPLE_BLOCK, "Example Block");
 
