@@ -1,6 +1,7 @@
 package io.github.realyusufismail.tutorialmod.events;
 
 import io.github.realyusufismail.tutorialmod.armour.ExampleArmor;
+import io.github.realyusufismail.tutorialmod.client.shield.TutorialModShieldItemRendererProvider;
 import io.github.realyusufismail.tutorialmod.init.ItemInit;
 import io.github.realyusufismail.tutorialmod.items.ModSwordItem;
 import io.github.realyusufismail.tutorialmod.util.TutorialModUtils;
@@ -10,6 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.common.damagesource.DamageContainer;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
@@ -56,5 +58,9 @@ public class Events {
                         .igniteForTicks(getTimeInTicks(30, TutorialModUtils.TimeUnit.SECONDS));
             }
         }
+    }
+
+    public static void registerClientExtensionsEvent(RegisterClientExtensionsEvent event) {
+        event.registerItem(TutorialModShieldItemRendererProvider.shield(), ItemInit.GRAPHITE_SHIELD.get());
     }
 }

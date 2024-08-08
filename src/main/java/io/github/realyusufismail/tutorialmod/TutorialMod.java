@@ -30,6 +30,7 @@ public class TutorialMod {
         bus.addListener(DataGenerators::gatherData);
         bus.addListener(Events::clientSetup);
         bus.addListener(TutorialModShieldItemRendererProvider::init);
+        bus.addListener(Events::registerClientExtensionsEvent);
         neoForgeBus.addListener(Events::onPlayerTickEventPre);
         neoForgeBus.addListener(Events::onEntityDamage);
 
