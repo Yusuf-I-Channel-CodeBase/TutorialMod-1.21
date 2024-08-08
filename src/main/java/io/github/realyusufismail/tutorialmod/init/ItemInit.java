@@ -1,7 +1,7 @@
 package io.github.realyusufismail.tutorialmod.init;
 
 import io.github.realyusufismail.tutorialmod.TutorialMod;
-import io.github.realyusufismail.tutorialmod.armour.ExampleArmour;
+import io.github.realyusufismail.tutorialmod.armour.ExampleArmor;
 import io.github.realyusufismail.tutorialmod.items.ModShieldItem;
 import io.github.realyusufismail.tutorialmod.items.ModSwordItem;
 import net.minecraft.world.item.ArmorItem;
@@ -39,13 +39,13 @@ public class ItemInit {
                     ))
                     .stacksTo(1)));
 
-    public static DeferredItem<Item> HELMET = ITEMS.register("helmet", () -> new ExampleArmour(ArmorItem.Type.HELMET, 15));
+    public static DeferredItem<Item> HELMET = ITEMS.register("helmet", () -> new ExampleArmor(ArmorItem.Type.HELMET, 15));
 
-    public static DeferredItem<Item> CHESTPLATE = ITEMS.register("chestplate", () -> new ExampleArmour(ArmorItem.Type.CHESTPLATE, 15));
+    public static DeferredItem<Item> CHESTPLATE = ITEMS.register("chestplate", () -> new ExampleArmor(ArmorItem.Type.CHESTPLATE, 15));
 
-    public static DeferredItem<Item> LEGGINGS = ITEMS.register("leggings", () -> new ExampleArmour(ArmorItem.Type.LEGGINGS, 15));
+    public static DeferredItem<Item> LEGGINGS = ITEMS.register("leggings", () -> new ExampleArmor(ArmorItem.Type.LEGGINGS, 15));
 
-    public static DeferredItem<Item> BOOTS = ITEMS.register("boots", () -> new ExampleArmour(ArmorItem.Type.BOOTS, 15));
+    public static DeferredItem<Item> BOOTS = ITEMS.register("boots", () -> new ExampleArmor(ArmorItem.Type.BOOTS, 15));
 
     public static DeferredItem<Item> GRAPHITE_SHIELD = ITEMS.register("graphite_shield", () -> new ModShieldItem(TierInit.SHIELD, 250));
 }

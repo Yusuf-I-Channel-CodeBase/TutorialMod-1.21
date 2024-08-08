@@ -1,6 +1,6 @@
 package io.github.realyusufismail.tutorialmod.events;
 
-import io.github.realyusufismail.tutorialmod.armour.ExampleArmour;
+import io.github.realyusufismail.tutorialmod.armour.ExampleArmor;
 import io.github.realyusufismail.tutorialmod.init.ItemInit;
 import io.github.realyusufismail.tutorialmod.items.ModSwordItem;
 import io.github.realyusufismail.tutorialmod.util.TutorialModUtils;
@@ -38,7 +38,7 @@ public class Events {
         }
 
         if (Objects.requireNonNull(level.getServer(), "Tick count is null").getTickCount() % 40 == 5) {
-            ExampleArmour.handleFlight(player);
+            ExampleArmor.handleFlight(player);
         }
     }
 

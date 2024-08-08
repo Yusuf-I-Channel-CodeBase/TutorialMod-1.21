@@ -18,12 +18,12 @@ import net.neoforged.neoforge.common.extensions.IItemExtension;
 import org.jetbrains.annotations.NotNull;
 
 
-public class ExampleArmour extends ArmorItem implements IItemExtension {
+public class ExampleArmor extends ArmorItem implements IItemExtension {
     public static final ResourceLocation ENABLE_FLIGHT_RL = ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "enabling_flight");
     public static final AttributeModifier ENABLE_FLIGHT =
             new AttributeModifier(ENABLE_FLIGHT_RL, 2.0D, AttributeModifier.Operation.ADD_VALUE);
 
-    public ExampleArmour(Type type, int durability) {
+    public ExampleArmor(Type type, int durability) {
         super(ArmorMaterialInit.EXAMPLE_ARMOUR, type, new Item.Properties().durability(type.getDurability(durability)));
     }
 
@@ -69,9 +69,9 @@ public class ExampleArmour extends ArmorItem implements IItemExtension {
     }
 
     private static boolean isWearingFullSet(@NotNull ItemStack boots, ItemStack leggings, ItemStack chestplate, ItemStack helmet) {
-        return boots.getItem() instanceof ExampleArmour &&
-                leggings.getItem() instanceof ExampleArmour &&
-                chestplate.getItem() instanceof ExampleArmour &&
-                helmet.getItem() instanceof ExampleArmour;
+        return boots.getItem() instanceof ExampleArmor &&
+                leggings.getItem() instanceof ExampleArmor &&
+                chestplate.getItem() instanceof ExampleArmor &&
+                helmet.getItem() instanceof ExampleArmor;
     }
 }
