@@ -1,0 +1,7 @@
+{
+  "entries": [
+    "tutorialmod:example_item_from_igloo_chest",
+    "tutorialmod:example_item_from_iron_golem"
+  ],
+  "replace": false
+}

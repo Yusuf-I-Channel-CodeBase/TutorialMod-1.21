@@ -1,0 +1,4 @@
+// 1.21	2024-08-08T05:47:34.865233	Global Loot Modifiers : tutorialmod
+60641db777c2d35cc872ccfc7cc7480e72559477 data/neoforge/loot_modifiers/global_loot_modifiers.json
+7c8fa841a46c131d5b9d58923260f8681ecbe5fd data/tutorialmod/loot_modifiers/example_item_from_igloo_chest.json
+a891e805643031c2b80b813521b72a35c95121b2 data/tutorialmod/loot_modifiers/example_item_from_iron_golem.json
