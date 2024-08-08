@@ -1,4 +1,5 @@
-// 1.21	2024-07-07T11:31:07.585914	Tags for minecraft:item mod id tutorialmod
+// 1.21	2024-08-08T06:15:04.668964	Tags for minecraft:item mod id tutorialmod
+9c465efe84e885af7e01737141fab4277db3ba92 data/minecraft/tags/item/trimmable_armor.json
 c83f9edda4547a4af3f0016fda0c2621839849b3 data/tutorialmod/tags/item/example_block.json
 45f5e001644f26668bdf88ee06c051953b522b28 data/tutorialmod/tags/item/example_item.json
 da2ee27128dcabd679c7a80668a17537bbce2482 data/tutorialmod/tags/item/ores/deepslate_example_ore.json
